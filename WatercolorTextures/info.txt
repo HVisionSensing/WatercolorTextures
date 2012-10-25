@@ -1,0 +1,12 @@
+=============== INFO ===============
+I => show/hide this screen
+
+P => show/hide control points
+
+V => show/hide Voronoi cells
+
+W => warp according to points
+Q => show/hide warped image
+
+R => resynthesize warped image
+E => show/hide resynthesized image

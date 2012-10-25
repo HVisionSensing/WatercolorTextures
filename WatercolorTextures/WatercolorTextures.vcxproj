@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E88A328B-099A-4F34-A465-457E71FFCCE0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WatercolorTextures</RootNamespace>
+    <ProjectName>WatercolorTextures</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_INC_PATH)\opencv;$(OPENCV_INC_PATH)\opencv2;$(OPENCV_INC_PATH);.\;.\h;.\warp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OPENCV_LIB_PATH);./lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core242d.lib;opencv_highgui242d.lib;opencv_imgproc242d.lib;opencv_legacy242d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_INC_PATH)\opencv;$(OPENCV_INC_PATH)\opencv2;$(OPENCV_INC_PATH);.\;.\h;.\warp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OPENCV_LIB_PATH);./lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core242.lib;opencv_highgui242.lib;opencv_imgproc242.lib;opencv_legacy242.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="discretevoronoi.cpp" />
+    <ClCompile Include="displaycompositor.cpp" />
+    <ClCompile Include="gridwarp.cpp" />
+    <ClCompile Include="imageresynth.cpp" />
+    <ClCompile Include="imagestorage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="grid.cpp" />
+    <ClCompile Include="patchmatch.cpp" />
+    <ClCompile Include="pointgrabber.cpp" />
+    <ClCompile Include="randomgridmover.cpp" />
+    <ClCompile Include="regulargridinitializer.cpp" />
+    <ClCompile Include="staticimage.cpp" />
+    <ClCompile Include="textimage.cpp" />
+    <ClCompile Include="textureapplication.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="warp\delaunay.cpp" />
+    <ClCompile Include="warp\imgwarp_mls.cpp" />
+    <ClCompile Include="warp\imgwarp_mls_rigid.cpp" />
+    <ClCompile Include="warp\imgwarp_mls_similarity.cpp" />
+    <ClCompile Include="warp\imgwarp_piecewiseaffine.cpp" />
+    <ClCompile Include="window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="discretevoronoi.h" />
+    <ClInclude Include="displaycompositor.h" />
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="gridwarp.h" />
+    <ClInclude Include="idisplaydevice.h" />
+    <ClInclude Include="igridinitializer.h" />
+    <ClInclude Include="igridmover.h" />
+    <ClInclude Include="grid.h" />
+    <ClInclude Include="imageresynth.h" />
+    <ClInclude Include="imagestorage.h" />
+    <ClInclude Include="patchmatch.h" />
+    <ClInclude Include="randomgridmover.h" />
+    <ClInclude Include="textimage.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="pointgrabber.h" />
+    <ClInclude Include="regulargridinitializer.h" />
+    <ClInclude Include="staticimage.h" />
+    <ClInclude Include="textureapplication.h" />
+    <ClInclude Include="warp\delaunay.h" />
+    <ClInclude Include="warp\imgwarp_mls.h" />
+    <ClInclude Include="warp\imgwarp_mls_rigid.h" />
+    <ClInclude Include="warp\imgwarp_mls_similarity.h" />
+    <ClInclude Include="warp\imgwarp_piecewiseaffine.h" />
+    <ClInclude Include="window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="info.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

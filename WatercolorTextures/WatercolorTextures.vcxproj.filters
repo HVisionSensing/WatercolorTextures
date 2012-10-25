@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\warp">
+      <UniqueIdentifier>{f3437a6c-de9e-4e37-9a6f-607dbc591639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\warp">
+      <UniqueIdentifier>{7f12b1de-8320-45a1-8536-1291055118d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regulargridinitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imagestorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textureapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="displaycompositor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="staticimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointgrabber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="randomgridmover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="discretevoronoi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gridwarp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="warp\delaunay.cpp">
+      <Filter>Source Files\warp</Filter>
+    </ClCompile>
+    <ClCompile Include="warp\imgwarp_mls.cpp">
+      <Filter>Source Files\warp</Filter>
+    </ClCompile>
+    <ClCompile Include="warp\imgwarp_mls_rigid.cpp">
+      <Filter>Source Files\warp</Filter>
+    </ClCompile>
+    <ClCompile Include="warp\imgwarp_mls_similarity.cpp">
+      <Filter>Source Files\warp</Filter>
+    </ClCompile>
+    <ClCompile Include="warp\imgwarp_piecewiseaffine.cpp">
+      <Filter>Source Files\warp</Filter>
+    </ClCompile>
+    <ClCompile Include="imageresynth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="patchmatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="idisplaydevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="igridinitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="igridmover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regulargridinitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imagestorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textureapplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="displaycompositor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="staticimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pointgrabber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="randomgridmover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="discretevoronoi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gridwarp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="warp\delaunay.h">
+      <Filter>Header Files\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="warp\imgwarp_mls.h">
+      <Filter>Header Files\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="warp\imgwarp_mls_rigid.h">
+      <Filter>Header Files\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="warp\imgwarp_mls_similarity.h">
+      <Filter>Header Files\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="warp\imgwarp_piecewiseaffine.h">
+      <Filter>Header Files\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="imageresynth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patchmatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="info.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
